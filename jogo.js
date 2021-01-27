@@ -19,7 +19,7 @@ function Jogar(){
         tempojogo = 60
     }
     if(nivelrecuperado == 3){
-        tempojogo = 5
+        tempojogo = 30
     }
 
     let inserircronometro = document.getElementById('cronometro')
