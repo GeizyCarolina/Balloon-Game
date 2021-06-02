@@ -6,8 +6,10 @@
 		<title>Estourando Balões</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="estilo.css">
+		<link rel="stylesheet" href="selecao.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
 		<script>
 		   
@@ -20,23 +22,24 @@
 
 	</head>
 	<body>
-		
-		<div id="inicio-game">
-			<div id="game">
-                <p>
-					<h2>NIVEL</h2>
+	
+		<section>
+			<div class="start">
+				<div class="quadro">
+					<h2>Nível</h2>
 					<select id="nivel-jogo">
 						<option value="1">Fácil</option>
 						<option value="2">Normal</option>
 						<option value="3">Difícil</option>
 					</select>
-				</p>
-	
-				<a href="#">
-					<img src="imagens/iniciar.png" alt="" onclick="IniciarJogo()">
-				</a>			
-				<h2>INICIAR</h2>
-			</div>			
-		</div>		
+					<h4>Iniciar</h4>
+					<a href="#">
+						<img src="imagens/iniciar.png" onclick = " IniciarJogo () ">
+					</a>
+					
+				</div>
+			</div>
+		</section>					
 	</body>
 </html>
+
