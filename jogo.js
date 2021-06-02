@@ -57,11 +57,13 @@ function CriarBaloes(qnts_baloes){
 
         let criar = document.getElementById('criabalao')
         criar.appendChild(balao)
-        balao.style.margin = '10px'
+        balao.style.padding = '16px'
 
         // Evento para estourar os baloes
 
-        balao.onclick = function(){Estourando_Balao(this)} 
+        balao.onclick = function(){
+            Estourando_Balao(this)
+        } 
 
         // Para cada balao vamos assosiar ele a uma id usanso a variavel (i) e dar o nome de b
         // vai ficar b1 , b2 , b3 
@@ -123,11 +125,11 @@ function Pontuacao(valor){
 }
 
 function Situacao_Jogo(baloes_inteiros){
-     if(baloes_inteiros == 0 ){
-         alert(' PARABÉNS!!! VOCÊ GANHOU ')
-         clearTimeout(Contador_Tempo);
-         window.location.href = 'index.html'
-     }
+    if(baloes_inteiros == 0 ){
+        alert(' PARABÉNS!!! VOCÊ GANHOU ')
+        clearTimeout(Contador_Tempo);
+        window.location.href = 'index.html'
+    }
      
 }
 
